@@ -1,0 +1,154 @@
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.chat-toggle:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 340px;
+  height: 480px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f4f4f4;
+}
+
+.user-message {
+  background: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: 8px 0;
+  max-width: 80%;
+  margin-left: auto;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background: white;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: 8px 0;
+  max-width: 80%;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.chat-footer button {
+  margin-left: 8px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-footer button:hover {
+  background: #0056b3;
+}
+
+/* Dark Mode Support */
+
+.dark-mode .chat-box {
+  background: #1f1f1f;
+}
+
+.dark-mode .chat-body {
+  background: #2a2a2a;
+}
+
+.dark-mode .bot-message {
+  background: #3a3a3a;
+  color: white;
+  border: none;
+}
+
+.dark-mode .chat-footer {
+  background: #1f1f1f;
+}
+
+.dark-mode .chat-footer input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .chat-footer input::placeholder {
+  color: #bbb;
+}
+.quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.quick-buttons button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.quick-buttons button:hover {
+  background: #1d4ed8;
+}
