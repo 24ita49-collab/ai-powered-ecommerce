@@ -49,7 +49,7 @@ useEffect(() => {
 }, [darkMode]);
   const [userRole, setUserRole] =
 useState("");
-const [user, setUser] = useState(null);
+const [, setUser] = useState(null);
 const removeFromCart = (id) => {
   setCart((prev) => prev.filter((item) => item.id !== id));
 };

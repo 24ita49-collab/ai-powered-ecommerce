@@ -68,10 +68,7 @@ const addToCart = () => {
     toast.success("❤️ Added to Wishlist");
   };
 
-  const editProduct = () => {
-
-    alert("Admin Can Edit Product");
-  };
+  
 
   return (
 
